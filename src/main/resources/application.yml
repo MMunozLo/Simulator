@@ -4,7 +4,18 @@ spring:
   data:
     mongodb:
      uri: mongodb+srv://mariamunoz495:J4IvOQoTYE0mjKlM@cluster0.j63hf9r.mongodb.net/pk4u?retryWrites=true&w=majority&appName=Cluster0
+  rabbitmq:
+    host: leopard.lmq.cloudamqp.com
+    port: 5671
+    username: kuzfvycr
+    password: redGtbkNrTyn6Q8N36oHU1d39gXqrR7X
+    virtual-host: kuzfvycr
+    ssl:
+      enabled: true
 server:
   port: 8081
 pk4u:
-  base-url: http://localhost:8080/api/v1
+  base-url: http://localhost:8080
+simulator:
+  interval: 30
+
